@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<!-- Define que o documento é HTML5 -->
+
+<html lang="pt-br">
+<!-- Início do HTML e define idioma como português do Brasil -->
+
+<head>
+    <meta charset="UTF-8">
+    <!-- Permite usar acentos e caracteres especiais -->
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Responsividade: ajusta o layout para dispositivos móveis -->
+
+    <title>Financeira - Seja Nosso Cliente</title>
+    <!-- Título que aparece na aba do navegador -->
+
+    <link rel="stylesheet" href="index.css">
+    <!-- Importa o arquivo CSS externo para estilização -->
+</head>
+
+<body>
+     <!-- Logo do site clicável que leva para a página inicial -->
+     <div class="logo">
+        <a href="index.html">
+            <img src="imagens/logo.png" alt="Logotipo Financeira" class="logo-img">
+            <!-- Imagem da logo -->
+        </a>
+    </div> 
+
+    <!-- Container principal que organiza menu e conteúdo -->
+    <div class="container-principal">
+
+        <!-- Menu lateral de navegação -->
+        <nav class="menu-lateral">
+
+            <!-- Links do menu -->
+            <a href="index.html" class="btn-menu">INÍCIO</a>
+            <a href="emprestimos.html" class="btn-menu">EMPRÉSTIMOS</a>
+            <a href="emprestimos.html" class="btn-menu">FINANCIAMENTO</a>
+            <a href="emprestimos.html" class="btn-menu">ANTECIPAÇÃO</a>
+            <a href="clientes.html" class="btn-menu">CONTATO</a>
+
+            <!-- Classe destaque provavelmente muda a aparência -->
+            <a href="clientes.html" class="btn-menu destaque">SEJA NOSSO CLIENTE</a>
+
+        </nav>
+
+        <!-- Conteúdo principal da página -->
+        <main class="conteudo-cliente">
+
+            <!-- Banner principal -->
+            <section class="banner-cliente">
+
+                <!-- Área placeholder para imagem do banner -->
+                <div class="placeholder-banner">
+                    <img src="imagens/bannerprincipal.jpg" alt="Seja nosso cliente" class="banner-img">
+                </div>
+
+                <!-- Título da seção -->
+                <h2>SEJA NOSSO CLIENTE</h2>
+            </section>
+
+            <!-- Seção do formulário de cadastro -->
+            <section class="secao-cadastro">
+
+                <!-- Formulário -->
+                <form class="form-cadastro">
+
+                    <!-- Campo Nome -->
+                    <div class="campo-form">
+                        <label>Nome:</label>
+                        <input type="text" name="nome">
+                    </div>
+
+                    <!-- Campo Email -->
+                    <div class="campo-form">
+                        <label>E-mail:</label>
+                        <input type="email" name="email">
+                    </div>
+
+                    <!-- Campo Telefone -->
+                    <div class="campo-form">
+                        <label>Telefone:</label>
+                        <input type="tel" name="telefone">
+                    </div>
+
+                    <!-- Campo Select (lista suspensa) -->
+                    <div class="campo-form">
+                        <label>Tipo de Serviço:</label>
+                        <select name="servico">
+                            <option value="">Selecione...</option>
+                            <option value="emprestimo">Empréstimo</option>
+                            <option value="financiamento">Financiamento</option>
+                        </select>
+                    </div>
+                    
+                    <!-- Área com botão de opção (radio) -->
+                    <div class="checkbox-area">
+                        <input type="radio" id="aposentado" name="perfil">
+                        <label for="aposentado">Sou aposentado</label>
+                    </div>
+
+                    <!-- Botão de envio do formulário -->
+                    <div class="acao-cadastro">
+                        <button type="submit" class="btn-cadastrar">CADASTRAR</button>
+                    </div>
+
+                </form>
+            </section>
+        </main>
+    </div>
+
+    <!-- Rodapé da página -->
+    <footer class="rodape">
+
+        <!-- Texto do rodapé -->
+        <p>Contato | Endereço</p>
+
+        <!-- Ícones de redes sociais -->
+        <div class="icones-redes">
+            <img src="imagens/iconespreto.jpg" alt="Instagram" class="img-social">
+        </div>
+
+    </footer>
+</body>
+</html>

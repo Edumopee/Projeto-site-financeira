@@ -1,0 +1,381 @@
+/* ========================= */
+/* Configurações Gerais */
+/* ========================= */
+
+html, body {
+    margin: 0; /* Remove margem padrão do navegador */
+    font-family: Arial, sans-serif; /* Define fonte padrão */
+    display: 100%; /* Usa flexbox no body */
+    flex-direction: column; /* Organiza elementos em coluna */
+    min-height: 100vh; /* Altura mínima = 100% da tela */
+}
+
+/* ========================= */
+/* Ajustes para o Logotipo */
+/* ========================= */
+
+.logo-img {
+    height: 50px; /* Altura fixa da logo */
+    width: auto; /* Mantém proporção original */
+    display: block; /* Remove espaço extra inline */
+}
+
+.logo a {
+    text-decoration: none; /* Remove sublinhado do link */
+}
+
+/* ========================= */
+/* Topo (header) */
+/* ========================= */
+
+.topo {
+    display: flex; /* Layout flexível */
+    justify-content: space-between; /* Espaço entre elementos */
+    padding: 10px 20px;
+    border-bottom: 2px solid #ccc; /* Linha inferior */
+    align-items: center; /* Alinha verticalmente */
+}
+
+/* ========================= */
+/* Layout principal */
+/* ========================= */
+
+.container-principal {
+    display: flex; /* Menu lateral + conteúdo lado a lado */
+    flex: 1; /* Ocupa espaço restante */
+}
+
+/* ========================= */
+/* Menu Lateral */
+/* ========================= */
+
+.menu-lateral {
+    width: 200px; /* Largura fixa */
+    background-color:#CFB53B; 
+    padding: 20px 10px;
+    display: flex;
+    flex-direction: column; /* Botões em coluna */
+    gap: 10px; /* Espaçamento entre itens */
+    min-height: 100%;
+}
+
+/* Estilo dos links com aparência de botão */
+.menu-lateral .btn-menu {
+    background-color: #1b4121;
+    color: rgb(243, 239, 239);
+    border: none;
+    padding: 10px;
+    cursor: pointer; /* Mostra mãozinha ao passar mouse */
+    border-radius: 10px;
+
+    text-decoration: none; /* Remove sublinhado */
+    display: block;
+    text-align: center;
+    font-size: 13.33px;
+    box-sizing: border-box; /* Inclui padding no tamanho */
+}
+
+/* Botão ativo (página atual) */
+.menu-lateral .btn-menu.ativo {
+    background-color: #f3efef;
+    color: #1b4121;
+    font-weight: bold;
+}
+
+/* ========================= */
+/* Área de Conteúdo (Home) */
+/* ========================= */
+
+.conteudo {
+    flex: 1; /* Ocupa espaço restante */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 1200px; /* Limita largura */
+    margin: 0 auto; /* Centraliza */
+    width: 100%;
+    padding: 20px;
+    background-color: #fff;
+}
+
+/* Banner principal */
+.banner-img {
+    width: auto;
+    max-width: 800px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    border-radius: 10px;
+    object-fit: cover; /* Ajusta imagem sem distorcer */
+    max-height: 200px;
+}
+
+/* ========================= */
+/* Cards da página inicial */
+/* ========================= */
+
+.servicos {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; /* Quebra linha em telas menores */
+    gap: 30px;
+    width: 100%;
+    margin-top: 80px;
+}
+
+.card {
+    border: 2px solid #1b4121;
+    background-color: #CFB53B;
+    padding: 15px;
+    text-align: center;
+    width: 180px;
+    border-radius: 10px;
+}
+
+
+
+/* ========================= */
+/* Outros serviços */
+/* ========================= */
+
+.outros-servicos {
+    text-align: center;
+    margin-top: 50px;
+    padding: 20px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.outros-servicos h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #1b4121;
+    text-transform: uppercase; /* Texto em maiúsculo */
+}
+
+.caixa-texto {
+    border: 2px solid #1b4121;
+    padding: 20px 40px;
+    max-width: 900px;
+    text-align: justify;
+}
+
+.caixa-texto p {
+    color: #1b4121;
+    margin: 0;
+    line-height: 1.6; /* Espaçamento entre linhas */
+}
+
+/* ========================= */
+/* Página Empréstimos */
+/* ========================= */
+
+.conteudo-emprestimos {
+    flex: 1;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    background-color: #fff;
+}
+
+/* Cards informativos */
+.cards-topo {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.card-info {
+    background-color: #CFB53B;
+    border: 2px solid #1b4121;
+    padding: 30px;
+    width: 250px;
+    text-align: center;
+}
+
+/* Simulador */
+.secao-simulador {
+    text-align: center;
+}
+
+.secao-simulador h2 {
+    color: #1b4121;
+    margin-bottom: 20px;
+}
+
+.simulador-box {
+    border: 2px solid #1b4121;
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #CFB53B;
+}
+
+/* Campos do formulário */
+.form-group {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    border-bottom: 1px solid #ccc;
+}
+
+.form-group input, .form-group select {
+    width: 60%;
+    padding: 8px;
+    border: 1px solid #999;
+}
+
+/* Resultado simulação */
+.resultado-simulacao {
+    background-color: #b0b0b0;
+    padding: 20px;
+    text-align: center;
+}
+
+.btn-cliente {
+    background-color: #1b4121;
+    color: white;
+    border: none;
+    padding: 12px 30px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+/* FAQ */
+.perguntasfrequentes {
+    max-width: 600px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.faq-item {
+    background-color: #dcdcdc;
+    border: 1px solid #999;
+    padding: 10px 20px;
+    margin-bottom: 5px;
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+    color: #333;
+}
+
+/* ========================= */
+/* Página Seja Nosso Cliente */
+/* ========================= */
+
+.conteudo-cliente {
+    flex: 1;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.banner-cliente {
+    width: 100%;
+    max-width: 900px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.placeholder-banner {
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+.banner-cliente h2 {
+    color: #1b4121;
+    font-size: 28px;
+    letter-spacing: 2px;
+}
+
+/* Formulário cadastro */
+.form-cadastro {
+    border: 2px solid #1b4121;
+    width: 100%;
+    max-width: 700px;
+    background-color: #fff;
+}
+
+.campo-form {
+    display: flex;
+    border-bottom: 1px solid #1b4121;
+}
+
+.campo-form label {
+    background-color: #dcdcdc;
+    color: #1b4121;
+    padding: 15px;
+    width: 150px;
+    font-weight: bold;
+    border-right: 1px solid #1b4121;
+}
+
+.campo-form input, .campo-form select {
+    flex: 1;
+    border: none;
+    padding: 10px;
+    outline: none;
+}
+
+.checkbox-area {
+    background-color: #dcdcdc;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #1b4121;
+    font-weight: bold;
+}
+
+.acao-cadastro {
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.btn-cadastrar {
+    background-color: #1b4121;
+    color: white;
+    border: none;
+    padding: 15px 60px;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+/* ========================= */
+/* Rodapé (com redes sociais) */
+/* ========================= */
+
+.rodape {
+    background-color: #fff;
+    border-top: 2px solid #ccc;
+    text-align: center;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+}
+
+.icones-redes {
+    display: flex;
+    gap: 20px; /* Espaço entre imagens */
+    justify-content: center;
+}
+
+.img-social {
+    width: 300px; /* largura da imagem */
+    height: 24px;
+    object-fit: contain; /* evita distorção */
+}

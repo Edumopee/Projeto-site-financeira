@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<!-- Define o tipo do documento HTML -->
+
+
+<html lang="pt-br">
+<!-- Início do HTML e idioma português do Brasil -->
+
+<head>
+
+    <meta charset="UTF-8">
+    <!-- Permite usar acentos e caracteres especiais -->
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Responsividade para telas menores (celular/tablet) -->
+
+    <title>Financeira</title>
+    <!-- Título da página exibido na aba do navegador -->
+
+    <link rel="stylesheet" href="index.css">
+    <!-- Importa o arquivo CSS para estilização -->
+</head>
+
+<body>
+
+    <!-- Logo clicável que leva para página inicial -->
+    <div class="logo">
+        <a href="index.html">
+            <img src="imagens/logo.png" alt="Logotipo Financeira" class="logo-img">
+            <!-- Imagem da logo -->
+        </a>
+    </div> 
+
+    <!-- Container principal que agrupa menu e conteúdo -->
+    <div class="container-principal">
+
+        <!-- Menu lateral de navegação -->
+        <nav class="menu-lateral">
+
+            <!-- Links do menu -->
+            <a href="index.html" class="btn-menu">INÍCIO</a>
+            <a href="emprestimos.html" class="btn-menu">EMPRÉSTIMOS</a>
+            <a href="emprestimos.html" class="btn-menu">FINANCIAMENTO</a>
+            <a href="emprestimos.html" class="btn-menu">ANTECIPAÇÃO</a>
+            <a href="clientes.html" class="btn-menu">CONTATO</a>
+
+            <!-- Classe destaque provavelmente aplica estilo diferente -->
+            <a href="clientes.html" class="btn-menu destaque">SEJA NOSSO CLIENTE</a>
+
+        </nav>
+
+        <!-- Conteúdo principal da página -->
+        <main class="conteudo">
+
+            <!-- Área do banner principal -->
+            <section class="banner-area">
+
+                <!-- Imagem do banner -->
+                <img src="imagens/bannerprincipal.jpg" alt="Banner inicial" class="banner-img">
+
+            </section>
+
+            <!-- Seção de serviços oferecidos -->
+            <section class="servicos">
+
+                <!-- Card 1 -->
+                <div class="card">
+                    <div class="placeholder-img"></div>
+                    <!-- Espaço reservado para imagem futura -->
+
+                    <span class="tag">Emprestimos</span>
+                    <!-- Categoria do serviço -->
+
+                    <p>Consignados, pessoal, aposentados</p>
+                    <!-- Descrição -->
+
+                    <button>Saiba mais</button>
+                    <!-- Botão ação -->
+                </div>
+
+                <!-- Card 2 -->
+                <div class="card">
+                    <div class="placeholder-img"></div>
+                    <span class="tag">Financiamento</span>
+                    <p>Fianciamento com garantia</p>
+                    <button>Saiba mais</button>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="card">
+                    <div class="placeholder-img"></div>
+                    <span class="tag">Antecipação</span>
+                    <p>FGTS, saque aniversário</p>
+
+                    <!-- Quebra de linha manual -->
+                    <br/>
+
+                    <button>Saiba mais</button>
+                </div>
+
+            </section>
+
+        </main>
+    </div>
+
+    <!-- Seção adicional fora do container principal -->
+    <section class="outros-servicos">
+
+        <h2>OUTROS SERVIÇOS</h2>
+
+        <!-- Caixa com texto descritivo -->
+        <div class="caixa-texto">
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Suscipit obcaecati architecto quibusdam fuga beatae provident quia ullam commodi molestiae!
+                Dolores error esse sapiente eos illo qui dolorum, debitis dignissimos ullam.
+            </p>
+        </div>
+
+    </section>
+
+    <!-- Rodapé -->
+    <footer class="rodape">
+
+        <p>Contato | Endereço</p>
+
+        <!-- Ícones redes sociais -->
+        <div class="icones-redes">
+            <img src="imagens/iconespreto.jpg" alt="Instagram" class="img-social">
+        </div>
+
+    </footer>
+
+</body>
+</html>

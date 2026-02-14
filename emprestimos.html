@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<!-- Define o tipo do documento como HTML5 -->
+
+<html lang="pt-br">
+<!-- Início do HTML e idioma português do Brasil -->
+
+<head>
+
+    <meta charset="UTF-8">
+    <!-- Permite acentos e caracteres especiais -->
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Responsividade para dispositivos móveis -->
+
+    <title>Financeira - Empréstimos</title>
+    <!-- Título da página na aba do navegador -->
+
+    <link rel="stylesheet" href="index.css">
+    <!-- Importa o arquivo CSS para estilização -->
+</head>
+
+<body>
+
+    <!-- Logo clicável que leva para página inicial -->
+    <div class="logo">
+        <a href="index.html">
+            <img src="imagens/logo.png" alt="Logotipo Financeira" class="logo-img">
+            <!-- Imagem da logo -->
+        </a>
+    </div> 
+   
+    <!-- Container principal que agrupa menu e conteúdo -->
+    <div class="container-principal">
+
+        <!-- Menu lateral de navegação -->
+        <nav class="menu-lateral">
+
+            <!-- Links do menu -->
+            <a href="index.html" class="btn-menu">INÍCIO</a>
+            <a href="emprestimos.html" class="btn-menu">EMPRÉSTIMOS</a>
+            <a href="emprestimos.html" class="btn-menu">FINANCIAMENTO</a>
+            <a href="emprestimos.html" class="btn-menu">ANTECIPAÇÃO</a>
+            <a href="clientes.html" class="btn-menu">CONTATO</a>
+
+            <!-- Classe destaque aplica estilo diferente -->
+            <a href="clientes.html" class="btn-menu destaque">SEJA NOSSO CLIENTE</a>
+
+        </nav>
+
+        <!-- Área principal da página -->
+        <main class="conteudo-cliente">
+
+            <!-- Banner da página -->
+            <section class="banner-cliente">
+
+                <!-- Container da imagem do banner -->
+                <div class="placeholder-banner">
+                    <img src="imagens/bannerprincipal.jpg" alt="Seja nosso cliente" class="banner-img">
+                </div>
+
+                <!-- Título do banner -->
+                <h2>SEJA NOSSO CLIENTE</h2>
+            </section>
+
+
+        <main class="conteudo-emprestimos">
+
+            <!-- Cards informativos sobre tipos de empréstimo -->
+            <section class="cards-topo">
+
+                <div class="card-info">
+                    <h3>EMPRÉSTIMO PESSOAL</h3>
+                    <p>Emprestimo para usar como bem entender</p>
+                    <p>Reforma, contas, viagem</p>
+                </div>
+
+                <div class="card-info">
+                    <h3>EMPRÉSTIMO CONSIGNADO</h3>
+                    <p>Condições especiais para desconto em folha</p>
+                </div>
+
+            </section>
+
+            <!-- Seção simulador de empréstimo -->
+            <section class="secao-simulador">
+
+                <h2>Simule seu Empréstimo</h2>
+
+                <div class="simulador-box">
+
+                    <!-- Campo tipo de empréstimo -->
+                    <div class="form-group">
+                        <label>Tipo de Empréstimo</label>
+                        <select>
+                            <option>Selecione...</option>
+                            <option>Pessoal</option>
+                            <option>Consignado</option>
+                        </select>
+                    </div>
+
+                    <!-- Campo valor desejado -->
+                    <div class="form-group">
+                        <label>Valor Desejado:</label>
+                        <input type="text" placeholder="R$ 0,00">
+                    </div>
+
+                    <!-- Campo quantidade de parcelas -->
+                    <div class="form-group">
+                        <label>Parcelas</label>
+                        <select>
+                            <option>12x</option>
+                            <option>24x</option>
+                            <option>48x</option>
+                        </select>
+                    </div>
+                    
+                    <!-- Resultado da simulação -->
+                    <div class="resultado-simulacao">
+                        <p>Valor da Parcela: <strong>R$ XXXX</strong></p>
+
+                        <!-- Botão para direcionar cliente -->
+                        <button class="btn-cliente">Seja Nosso Cliente</button>
+                    </div>
+
+                </div>
+            </section>
+
+            <!-- Perguntas frequentes (FAQ) -->
+            <section class="perguntasfrequentes">
+
+                <h3>Perguntas frequentes</h3>
+
+                <!-- Cada item pode futuramente abrir/responder (JS) -->
+                <div class="faq-item">Quais taxas para emprestimos <span>+</span></div>
+                <div class="faq-item">Em quanto tempo e feita a liberação do crédito <span>+</span></div>
+                <div class="faq-item">Sou aposentado, consigo um financiamento? <span>+</span></div>
+
+            </section>
+
+        </main>
+    </div>
+
+    <!-- Rodapé -->
+    <footer class="rodape">
+
+        <p>Contato | Endereço</p>
+
+        <!-- Ícones redes sociais -->
+        <div class="icones-redes">
+            <img src="imagens/iconespreto.jpg" alt="Instagram" class="img-social">
+        </div>
+
+    </footer>
+
+</body>
+</html>
